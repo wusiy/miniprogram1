@@ -5,9 +5,9 @@
 	padding: 0;
 }
 .current_location{
-	width: 94rpx;height: 94rpx;position: absolute;
-	right: 23rpx;
-	top: 53rpx;
+	width: 60rpx;height: 60rpx;position: absolute;
+	right: 30rpx;
+	top: rpx;
 	z-index: 200;
 }
 .cover-image {
@@ -37,8 +37,8 @@
 
 .map {
 
-	width: 950rpx;
+	width: 900rpx;
 
-	height: 1002rpx;
+	height: 1200rpx;
 
 }
