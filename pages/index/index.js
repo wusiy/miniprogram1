@@ -12,10 +12,27 @@ Page({
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
-      url: '../logs/logs'
+      url: '../maps/map'
     })
   },
+  click:function(){
+    console.log("点击了文字");
+  
+
+    wx.authorize({
+      scope: 'scope.userLocation'
+    });
+       
+  },
+ 
+
   onLoad: function () {
+    
+    wx.authorize({
+      scope: 'scope.userLocation'
+    });
+        
+
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -32,6 +49,8 @@ Page({
       }
     } else {
       // 在没有 open-type=getUserInfo 版本的兼容处理
+      
+
       wx.getUserInfo({
         success: res => {
           app.globalData.userInfo = res.userInfo

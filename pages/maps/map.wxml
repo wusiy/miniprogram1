@@ -1,0 +1,10 @@
+<!--pages/maps/map.wxml-->
+
+<view class="container">
+	<map id="map4select" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" controls="{{controls}}" markers="{{markers}}"
+	 show-location bindcontroltap="controltap" polyline="{{polyline}}" bindmarkertap="markertap"     circles="{{circles}}"
+	 	 bindregionchange="regionchange" class='map'>
+		<cover-image class="cover-image" bindtap="my_location" src="../res/here.jpg" />
+	</map>
+		<image src="../res/here.jpg" class="current_location" bindtap="Location"></image>
+</view>

@@ -10,4 +10,10 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+
+  <view>
+    <text catchtap="click" class="window">Hello</text>
+  </view>
+
+  <button open-type='openSetting'>打开设置页</button>
 </view>
